@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurants Manager</title>
+  </head>
+  <body>
+  <h1>My Restaurants</h1>
+  <ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <% restaurant.name %> <% restaurant.address %> <% restaurant.phone_number %> <% restaurant.category %>
+    </li>
+  <% end %>
+  </ul>
+  <%= link_to 'new_Restaurants', new_restaurant_path%>
+  </body>
+</html>
