@@ -8,10 +8,9 @@
   <ul>
   <% @restaurants.each do |restaurant| %>
     <li>
-      <% restaurant.name %> <% restaurant.address %> <% restaurant.phone_number %> <% restaurant.category %>
+      <%= restaurant.name %> <%= restaurant.address %> <%= restaurant.phone_number %> <%= restaurant.category %>
     </li>
   <% end %>
   </ul>
-  <%= link_to 'new_Restaurants', new_restaurant_path%>
   </body>
 </html>
